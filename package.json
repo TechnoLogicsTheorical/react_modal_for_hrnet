@@ -1,36 +1,32 @@
 {
-    "name": "react_modal_for_hrnet",
-    "version": "1.0.4",
-    "main": "src/Modal.js",
-    "module": "src/Modal.mjs",
-    "files": [
-        "dist",
-        "README.md"
-    ],
-    "description": "Juste une modale",
-    "scripts": {
-        "clean": "rm -rf dist",
-        "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files && cp package.json README.md ./dist"
-    },
-    "repository": {
-        "type": "git",
-        "directory": "git+https://github.com/TechnoLogicsTheorical/react_modal_for_hrnet"
-    },
-    "keywords": [
-        "react",
-        "modal"
-    ],
-    "author": "Anthony MARCELLIN",
-    "license": "MIT",
-    "devDependencies": {
-        "@babel/cli": "^7.21.0",
-        "@babel/core": "^7.21.4",
-        "@babel/preset-env": "^7.21.4",
-        "@babel/preset-react": "^7.18.6",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    },
-    "dependencies": {
-        "@babel/polyfill": "^7.12.1"
-    }
+  "name": "react_modal_for_hrnet",
+  "version": "1.1.0",
+  "description": "Juste une modale",
+  "keywords": [
+    "react",
+    "modal"
+  ],
+  "author": "Anthony MARCELLIN",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "SET NODE_ENV=production&& babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "git+https://github.com/TechnoLogicsTheorical/react_modal_for_hrnet"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }

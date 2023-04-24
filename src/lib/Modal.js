@@ -9,7 +9,7 @@ import "./Modal-Styles.css";
  * @returns {JSX.Element|null}
  * @constructor
  */
-function Modal({ isOpen, closeModal, children }) {
+const Modal = ({ isOpen, closeModal, children }) => {
     if (!isOpen) {
         return null;
     }
